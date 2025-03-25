@@ -50,8 +50,9 @@ blueprint:
               model: Hue dimmer switch (324131092621)
             # source: https://github.com/dresden-elektronik/deconz-rest-plugin/wiki/Supported-Devices
             - integration: zha
-              manufacturer: Philips
-              # TBConfirmed** model:
+              entity:
+                domain: sensor
+                device_class: battery
             - integration: deconz
               manufacturer: Philips
               # TBConfirmed** model:
